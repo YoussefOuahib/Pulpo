@@ -1,0 +1,944 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAPPY - Responsive admin dashbord</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e5f6d12c80.js" crossorigin="anonymous"></script> 
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>    
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"  />
+
+
+    </head>
+    <body>
+        <section class="top">
+        <div class="subnavbar">
+            <div class="container">
+                <div class="left-side">
+                    <h3>Welcome to El Pulpo Electronics Store</h3>
+                </div>
+                <div class="right-side">
+                <ul class="pulp-list">
+                    <span class="material-icons-sharp ml-2">store</span><li class="pulp-list-group">Store Locator |</li>
+                    <span class="material-icons-sharp ml-2">gps_fixed</span> <li class="pulp-list-group">Track your Order |</li>
+                    <span class="material-icons-sharp ml-2">person_outline</span> <li class="pulp-list-group"> My Account </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mid-navbar">
+            <div class="container">
+            <div class="row">
+                <div class="col-3">
+            <div class="brand">
+                <img src="images/logo.png" width="150px" height="80px" >
+            </div>
+            </div>
+            <div class="col-6">
+            <div class="search-box">
+                <input type="text" placeholder="Search ...">
+                <button class="searchButton"><i class="fa fa-search"></i></button>
+            </div>
+            </div>
+
+            <div class="col-3">
+            <div class="account">
+                <small class="account-button" href="#"><span class="material-icons-sharp ml-2">person_outline</small> </a>
+                <ul class="account-dropdown">
+                   <li><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</li>
+                   <li ><i class="fa-solid fa-user-plus"></i> Register</li>
+                </ul>
+                <a href="#" style="color: #363949;"><span class="material-icons-sharp ml-2">shopping_cart</span>3</a>
+            </div>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="top-mobile">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <span id="sidebarCollapse" style="cursor: pointer;">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <img src="images/logo.png" width="70" height="70" >
+        </a>
+        <div class="account float-right mr-4">
+          <span class="material-icons-sharp">search</span>
+          <small class="account-button" href="#"><span class="material-icons-sharp ml-2">person_outline</small> </a>
+          <ul class="account-dropdown-mobile" style="z-index: 99999999;">
+             <li><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</li>
+             <li ><i class="fa-solid fa-user-plus"></i> Register</li>
+          </ul>
+           <a href="#" style="color: #363949;"><span class="material-icons-sharp ml-2">shopping_cart</span>3</a>
+
+      </div>
+      </nav>
+      <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h4>All Departments</h4>
+                <hr>
+            </div>
+            <ul class="list-unstyled components">
+                <li> <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li> <a href="#">Dashboard1</a> </li>
+                        <li> <a href="#">Dashboard2</a> </li>
+                        <li> <a href="#">Dashboard3</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Users</a> </li>
+                <li> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Subscribers</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li> <a href="#">Active</a> </li>
+                        <li> <a href="#">Idle</a> </li>
+                        <li> <a href="#">Non Active</a> </li>
+                    </ul>
+                </li>
+               
+            </ul>
+                                                                                                                                 
+        </nav>
+        </div>
+    </section>
+    <main>
+        <div class="under-navbar">
+       
+            <div class="dropdown">
+                <button class="btn btn-default font-weight-bold dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa-solid fa-list"></i> All Departments
+            </button>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">HTML</a></li>
+                    <li><a tabindex="-1" href="#">CSS</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                        <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                        <li class="dropdown-submenu">
+                          <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">3rd level dropdown</a></li>
+                            <li><a href="#">3rd level dropdown</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+             
+              <div class="pages">
+                  <a href="">Home</a>
+                  <a href="">Contact</a>
+                  <a href="">About us</a>
+
+              </div>
+            </div>
+
+    </main>
+    <section class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="height: 70%;" class="d-block w-100" src="images/banner1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 70%;" class="d-block w-100" src="images/banner1.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img style="height: 70%;" class="d-block w-100" src="images/banner1.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+    <section class="features">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="feature">
+                   <div class="feature-icon">
+                    <i class="fa-solid fa-truck-fast"></i>
+                       </div>
+                       <div class="feature-content">
+                    <h5> Free Delivery</h5>
+                    <p>Free shipping on all orders </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="feature">
+                   <div class="feature-icon">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                   </div>
+                   <div class="feature-content">
+                    <h5> Free Return</h5>
+                    <p>Free return over $100 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-headset"></i>
+                       </div>
+                       <div class="feature-content">
+                    <h5>Customer Support</h5>
+                    <p>Friendly 24/7 customer support </p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="feature">
+                   <div class="feature-icon">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                   </div>
+                   <div class="feature-content">
+                    <h5> Money Back Guarantee</h5>
+                    <p>Back guarantee under 7 days </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="banners mt-2">
+        <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="banner-img">
+                    <img src="images/banner1.jpg"  alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="banner-img">
+                    <img src="images/banner1.jpg"  alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="banner-img">
+                    <img src="images/s-banner.png"  alt="">
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <hr>
+    <section class="products">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Featured Products</h2>
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>   
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/ipad.jpg" class="img-fluid" alt="">									
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Apple iPad</h4>									
+                                          
+                                            <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/headphone.jpg" class="img-fluid" alt="Headphone">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sony Headphone</h4>									
+                                          
+                                            <p class="item-price"><strike>$25.00</strike> <b>$23.99</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>		
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/macbook-air.jpg" class="img-fluid" alt="Macbook">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Macbook Air</h4>									
+                                           
+                                            <p class="item-price"><strike>$899.00</strike> <b>$649.00</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>								
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/nikon.jpg" class="img-fluid" alt="Nikon">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Nikon DSLR</h4>									
+                                            
+                                            <p class="item-price"><strike>$315.00</strike> <b>$250.00</b></p>
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/play-station.jpg" class="img-fluid" alt="Play Station">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Sony Play Station</h4>
+                                            <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                                           
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/macbook-pro.jpg" class="img-fluid" alt="Macbook">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Macbook Pro</h4>
+                                            <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                                         
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/speaker.jpg" class="img-fluid" alt="Speaker">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Bose Speaker</h4>
+                                            <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                                        
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/galaxy.jpg" class="img-fluid" alt="Galaxy">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Samsung Galaxy S8</h4>
+                                            <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                                         
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>						
+                            </div>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/iphone.jpg" class="img-fluid" alt="iPhone">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Apple iPhone</h4>
+                                            <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                                           
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/canon.jpg" class="img-fluid" alt="Canon">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Canon DSLR</h4>
+                                            <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                                         
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/pixel.jpg" class="img-fluid" alt="Pixel">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Google Pixel</h4>
+                                            <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                                  
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>	
+                                <div class="col-sm-3">
+                                    <div class="thumb-wrapper">
+                                        <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                        <div class="img-box">
+                                            <img src="/examples/images/products/watch.jpg" class="img-fluid" alt="Watch">
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h4>Apple Watch</h4>
+                                            <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                                       
+                                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                                        </div>						
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <div class="categories container mt-100">
+        <h2 class="mb-4">Categories</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img src="https://i.imgur.com/O0GMYuw.jpg" alt="Category"></div>
+                            <div class="thumblist"><img src="https://i.imgur.com/ILEU18M.jpg" alt="Category"><img src="https://i.imgur.com/2kePJmX.jpg" alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Laptops</h4>
+                        <p class="text-muted">Starting from $499</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img src="https://i.imgur.com/uRgdVY1.jpg" alt="Category"></div>
+                            <div class="thumblist"><img src="https://i.imgur.com/VwSKS7A.jpg" alt="Category"><img src="https://i.imgur.com/gTvZ2H5.jpg" alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Mobiles</h4>
+                        <p class="text-muted">Starting from $50</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-30"><a class="card-img-tiles" href="#" data-abc="true">
+                        <div class="inner">
+                            <div class="main-img"><img src="https://i.imgur.com/0jO40CF.jpg" alt="Category"></div>
+                            <div class="thumblist"><img src="https://i.imgur.com/dWYAg41.jpg" alt="Category"><img src="https://i.imgur.com/5oQEZSC.jpg" alt="Category"></div>
+                        </div>
+                    </a>
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Accessories</h4>
+                        <p class="text-muted">Starting from $9</p><a class="btn btn-outline-primary btn-sm" href="#" data-abc="true">View Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <section class="banners mt-2">
+        <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="banner-img">
+                    <img src="images/banner1.jpg"  alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="banner-img">
+                    <img src="images/banner1.jpg"  alt="">
+                </div>
+            </div>
+           
+        </div>
+        </div>
+    </section>
+    <hr>
+
+    <div class="shell">
+        <div class="container">
+          <h2>Best Selling Products</h2>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img src="images/product01.png" alt="Product" class="img-responsive" />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>Apple</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Iphone 13 Pro max </h3>
+                  </div>
+                
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">$1300,00</span> <span class="text-decoration-line-through text-muted">$1500</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  col-6">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="images/product02.png" alt="Product" class="img-responsive" /></div>
+                <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Apple</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Iphone 13 Pro max </h3>
+                    </div>
+                  
+                    <div class="card-footer">
+                      <div class="wcf-left">
+                        <span class="price">$1300,00</span> <span class="text-decoration-line-through text-muted">$1500</span>
+                      </div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="images/product03.png" alt="Product" class="img-responsive" /></div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>Smart TV</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Samsung Smart TV 40' </h3>
+                  </div>
+                
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="images/product04.png" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Smart TV</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Samsung Smart TV 40' </h3>
+                    </div>
+                  
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img src="images/product01.png" alt="Product" class="img-responsive" />
+                </div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>Apple</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Iphone 13 Pro max </h3>
+                  </div>
+                
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">$1300,00</span> <span class="text-decoration-line-through text-muted">$1500</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="images/product02.png" alt="Product" class="img-responsive" /></div>
+                <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Apple</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Iphone 13 Pro max </h3>
+                    </div>
+                  
+                    <div class="card-footer">
+                      <div class="wcf-left">
+                        <span class="price">$1300,00</span> <span class="text-decoration-line-through text-muted">$1500</span>
+                      </div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="images/product03.png" alt="Product" class="img-responsive" /></div>
+                <div class="wsk-cp-text">
+                  <div class="category">
+                    <span>Smart TV</span>
+                  </div>
+                  <div class="title-product">
+                    <h3>Samsung Smart TV 40' </h3>
+                  </div>
+                
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="wsk-cp-product">
+                  <div class="wsk-cp-img"><img src="images/product04.png" alt="Product" class="img-responsive" /></div>
+                  <div class="wsk-cp-text">
+                    <div class="category">
+                      <span>Smart TV</span>
+                    </div>
+                    <div class="title-product">
+                      <h3>Samsung Smart TV 40' </h3>
+                    </div>
+                  
+                    <div class="card-footer">
+                      <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+                      <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+         
+        </div>
+      </div>
+
+      <hr>
+      <section class="banners mt-2">
+          <div class="container">
+          <div class="row">
+              <div class="col-4">
+                  <div class="banner-img">
+                      <img src="images/banner1.jpg"  alt="">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="banner-img">
+                      <img src="images/banner1.jpg"  alt="">
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="banner-img">
+                      <img src="images/s-banner.png"  alt="">
+                  </div>
+  
+              </div>
+          </div>
+          </div>
+      </section>
+      <hr>
+<div class="product-slider">
+    <ul class="shell product-list">
+      <li>
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="images/product04.png" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Smart TV</span>
+            </div>
+            <div class="title-product">
+              <h3>Samsung Smart TV 40' </h3>
+            </div>
+          
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="images/product05.png" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Smart TV</span>
+            </div>
+            <div class="title-product">
+              <h3>Samsung Smart TV 40' </h3>
+            </div>
+          
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="images/product06.png" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Smart TV</span>
+            </div>
+            <div class="title-product">
+              <h3>Samsung Smart TV 40' </h3>
+            </div>
+          
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="images/product07.png" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Smart TV</span>
+            </div>
+            <div class="title-product">
+              <h3>Samsung Smart TV 40' </h3>
+            </div>
+          
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="images/product08.png" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Smart TV</span>
+            </div>
+            <div class="title-product">
+              <h3>Samsung Smart TV 40' </h3>
+            </div>
+          
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="wsk-cp-product">
+          <div class="wsk-cp-img"><img src="images/product01.png" alt="Product" class="img-responsive" /></div>
+          <div class="wsk-cp-text">
+            <div class="category">
+              <span>Smart TV</span>
+            </div>
+            <div class="title-product">
+              <h3>Samsung Smart TV 40' </h3>
+            </div>
+          
+            <div class="card-footer">
+              <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+              <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <h1>slide 7</h1>
+      </li>
+      <li>
+        <h1>slide 8</h1>
+      </li>
+    </ul>
+   </div>
+
+   <div class="newsletter-subscribe mt-5 container">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center newsletter">Subscribe to our Newsletter</h2>
+        </div>
+        <form class="form-inline" method="post">
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
+            <div class="form-group"><button class="btn btn-primary" type="button">Subscribe </button></div>
+        </form>
+    </div>
+</div>
+
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+ 
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="links">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!">Angular</a>
+          </p>
+          <p>
+            <a href="#!">React</a>
+          </p>
+          <p>
+            <a href="#!">Vue</a>
+          </p>
+          <p>
+            <a href="#!">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!">Pricing</a>
+          </p>
+          <p>
+            <a href="#!">Settings</a>
+          </p>
+          <p>
+            <a href="#!">Orders</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    
+    <a class="text-reset fw-bold">Developped By YOUSSEF OUAHIB</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>>
+    <script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

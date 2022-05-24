@@ -1,0 +1,373 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PAPPY - Responsive admin dashbord</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e5f6d12c80.js" crossorigin="anonymous"></script> 
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"  />
+     <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+    <body>
+        <section class="top">
+        <div class="subnavbar">
+            <div class="container">
+                <div class="left-side">
+                    <h3>Welcome to El Pulpo Electronics Store</h3>
+                </div>
+                <div class="right-side">
+                <ul class="pulp-list">
+                    <span class="material-icons-sharp ml-2">store</span><li class="pulp-list-group">Store Locator |</li>
+                    <span class="material-icons-sharp ml-2">gps_fixed</span> <li class="pulp-list-group">Track your Order |</li>
+                    <span class="material-icons-sharp ml-2">person_outline</span> <li class="pulp-list-group"> My Account </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mid-navbar">
+            <div class="container">
+            <div class="row">
+                <div class="col-3">
+            <div class="brand">
+                <img src="images/logo.png" width="150px" height="80px" >
+            </div>
+            </div>
+            <div class="col-6">
+            <div class="search-box">
+                <input type="text" placeholder="Search ...">
+                <button class="searchButton"><i class="fa fa-search"></i></button>
+            </div>
+            </div>
+
+            <div class="col-3">
+            <div class="account">
+                <small class="account-button" href="#"><span class="material-icons-sharp ml-2">person_outline</small> </a>
+                <ul class="account-dropdown">
+                   <li><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</li>
+                   <li ><i class="fa-solid fa-user-plus"></i> Register</li>
+                </ul>
+                <a href="#"  data-toggle="modal" data-target="#exampleModal" style="color: #363949;"><span class="material-icons-sharp ml-2">shopping_cart</span>3</a>
+            </div>
+            </div>
+            </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    
+    <section class="top-mobile">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <span id="sidebarCollapse" style="cursor: pointer;">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <img src="images/logo.png" width="70" height="70" >
+        </a>
+        <div class="account float-right mr-4">
+          <span class="material-icons-sharp">search</span>
+          <small class="account-button" href="#"><span class="material-icons-sharp ml-2">person_outline</small> </a>
+          <ul class="account-dropdown-mobile" style="z-index: 99999999;">
+             <li><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</li>
+             <li ><i class="fa-solid fa-user-plus"></i> Register</li>
+          </ul>
+           <a href="#" style="color: #363949;"><span class="material-icons-sharp ml-2">shopping_cart</span>3</a>
+
+      </div>
+      </nav>
+      <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h4>All Departments</h4>
+                <hr>
+            </div>
+            <ul class="list-unstyled components">
+                <li> <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li> <a href="#">Dashboard1</a> </li>
+                        <li> <a href="#">Dashboard2</a> </li>
+                        <li> <a href="#">Dashboard3</a> </li>
+                    </ul>
+                </li>
+                <li> <a href="#">Users</a> </li>
+                <li> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Subscribers</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li> <a href="#">Active</a> </li>
+                        <li> <a href="#">Idle</a> </li>
+                        <li> <a href="#">Non Active</a> </li>
+                    </ul>
+                </li>
+               
+            </ul>
+                                                                                                                                 
+        </nav>
+    </section>
+    <main>
+        <div class="under-navbar">
+       
+            <div class="dropdown">
+                <button class="btn btn-default font-weight-bold dropdown-toggle" type="button" data-toggle="dropdown"><i class="fa-solid fa-list"></i> All Departments
+            </button>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">HTML</a></li>
+                    <li><a tabindex="-1" href="#">CSS</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                        <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                        <li class="dropdown-submenu">
+                          <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">3rd level dropdown</a></li>
+                            <li><a href="#">3rd level dropdown</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+             
+              <div class="pages">
+                  <a href="">Home</a>
+                  <a href="">Contact</a>
+                  <a href="">About us</a>
+
+              </div>
+            </div>
+
+    </main>
+<div class="breadcumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                Category | Subcategory | ProductName
+            </div>
+        </div>
+    </div>
+</div>
+<div class="details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="slider-for">
+
+                    <img src="img/product01.png" width="60%" alt="">
+                    <img src="img/product02.png" width="60%" alt="">
+                    <img src="img/product03.png" width="60%" alt="">
+                    <img src="img/product04.png" width="60%" alt="">
+                    <img src="img/product05.png" width="60%" alt="">
+                    <img src="img/product06.png" width="60%" alt="">
+                </div>
+                
+                    <ul class="slider-nav">
+                        <li>
+                            <img src="img/product01.png" width="100px" alt="">
+                        </li>
+                        <li>
+                            <img src="img/product02.png" width="100px" alt="">
+                        </li>
+                        <li>
+                            <img src="img/product03.png" width="100px" alt="">
+                        </li>
+                        <li>
+                            <img src="img/product04.png" width="100px" alt="">
+                        </li>
+                        <li>
+                            <img src="img/product05.png" width="100px" alt="">
+                        </li>
+                        <li>
+                            <img src="img/product06.png" width="100px" alt="">
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="product-card">
+                 
+                        <h4>PRODUCT NAME GOES HERE</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <span class="price">$900.00</span> <span class="regular-price text-muted">$939.99</span>
+                   
+                        <div class="form-inline attributes">
+                            <label >Color: 
+                            <select name="attributes" class="form-control ml-2" >
+                                <option value="">RED</option>
+                                <option value="">BLUE</option>
+                                <option value="">BLACK</option>
+
+                            </select>
+                        </label>
+                            <label >Size: 
+                            <select name="attributes" class="form-control ml-2" >
+                                <option value="">RED</option>
+                                <option value="">BLUE</option>
+                                <option value="">BLACK</option>
+
+                            </select>
+                        </label>
+                        </div>
+                        <div class="input-group form-inline">
+                          <label class="mr-4" >QTY: </label>
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-info" type="button">-</button>
+                          </div>
+                          <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-info" type="button">+</button>
+                          </div>
+                        </div>
+                        <div class="call-to-action mt-4 text-center">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                        <div class="share ml-4 mt-4">
+                            <span>Share on: </span>
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                            <span><i class="fa-brands fa-whatsapp"></i></span>
+                            
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-info ">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                </li>
+               
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">...</div>
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">...</div>
+              </div>
+              </div>
+    </div>
+    
+</div>
+<div class="shell">
+    <div class="container">
+      <h2>Related Products</h2>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img">
+              <img src="images/product01.png" alt="Product" class="img-responsive" />
+            </div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Apple</span>
+              </div>
+              <div class="title-product">
+                <h3>Iphone 13 Pro max </h3>
+              </div>
+            
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">$1300,00</span> <span class="text-decoration-line-through text-muted">$1500</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="images/product02.png" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+                <div class="category">
+                  <span>Apple</span>
+                </div>
+                <div class="title-product">
+                  <h3>Iphone 13 Pro max </h3>
+                </div>
+              
+                <div class="card-footer">
+                  <div class="wcf-left">
+                    <span class="price">$1300,00</span> <span class="text-decoration-line-through text-muted">$1500</span>
+                  </div>
+                  <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="wsk-cp-product">
+            <div class="wsk-cp-img"><img src="images/product03.png" alt="Product" class="img-responsive" /></div>
+            <div class="wsk-cp-text">
+              <div class="category">
+                <span>Smart TV</span>
+              </div>
+              <div class="title-product">
+                <h3>Samsung Smart TV 40' </h3>
+              </div>
+            
+              <div class="card-footer">
+                <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+                <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="wsk-cp-product">
+              <div class="wsk-cp-img"><img src="images/product04.png" alt="Product" class="img-responsive" /></div>
+              <div class="wsk-cp-text">
+                <div class="category">
+                  <span>Smart TV</span>
+                </div>
+                <div class="title-product">
+                  <h3>Samsung Smart TV 40' </h3>
+                </div>
+              
+                <div class="card-footer">
+                  <div class="wcf-left"><span class="price">$500</span> <span class="text-decoration-line-through text-muted">$300.00</span></div>
+                  <div class="wcf-right"><a href="#" class="buy-btn"> Add to cart</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      </div>
+      
+ 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+    
+    <script src="js/index.js"></script>
+   <script>
+        $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  centerMode: true,
+  focusOnSelect: true
+});
+   </script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
